@@ -32,6 +32,7 @@ to internationalize software.
 =cut
 
 use Carp;
+use POSIX;
 
 require Exporter;
 require DynaLoader;
