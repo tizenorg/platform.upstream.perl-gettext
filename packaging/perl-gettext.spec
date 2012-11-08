@@ -1,22 +1,3 @@
-#
-# spec file for package perl-gettext
-#
-# Copyright (c) 2011 SUSE LINUX Products GmbH, Nuernberg, Germany.
-#
-# All modifications and additions to the file contributed by third parties
-# remain the property of their copyright owners, unless otherwise agreed
-# upon. The license for this file, and modifications and additions to the
-# file, is the same license as for the pristine package itself (unless the
-# license for the pristine package is not an Open Source License, in which
-# case the license is the MIT License). An "Open Source License" is a
-# license that conforms to the Open Source Definition (Version 1.9)
-# published by the Open Source Initiative.
-
-# Please submit bugfixes or comments via http://bugs.opensuse.org/
-#
-
-
-
 Name:           perl-gettext
 Version:        1.05
 Release:        151
@@ -26,7 +7,6 @@ Summary:        Message handling functions
 Url:            http://search.cpan.org/dist/gettext/
 Group:          Development/Libraries/Perl
 Source:         http://www.cpan.org/authors/id/P/PV/PVANDRY/gettext-%{version}.tar.gz
-Patch0:         %{name}-%{version}-POSIX.diff
 BuildRequires:  perl
 BuildRequires:  perl-macros
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
@@ -52,7 +32,6 @@ for the databases belonging to domain 'domain' in the directory 'dirname'
 
 %prep
 %setup -q -n %{cpan_name}-%{version}
-%patch0
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor OPTIMIZE="%{optflags}"
