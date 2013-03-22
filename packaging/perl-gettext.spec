@@ -8,9 +8,6 @@ Url:            http://search.cpan.org/dist/gettext/
 Group:          Development/Libraries/Perl
 Source:         http://www.cpan.org/authors/id/P/PV/PVANDRY/gettext-%{version}.tar.gz
 BuildRequires:  perl
-BuildRequires:  perl-macros
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
-%{perl_requires}
 
 %description
 The gettext module permits access from perl to the gettext() family of
@@ -47,6 +44,5 @@ make test
 
 %files -f %{name}.files
 %defattr(644,root,root,755)
-%doc README
 
 %changelog
