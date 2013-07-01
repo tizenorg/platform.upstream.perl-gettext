@@ -7,6 +7,7 @@ Summary:        Message handling functions
 Url:            http://search.cpan.org/dist/gettext/
 Group:          Development/Libraries/Perl
 Source:         http://www.cpan.org/authors/id/P/PV/PVANDRY/gettext-%{version}.tar.gz
+Source1001: 	perl-gettext.manifest
 BuildRequires:  perl
 
 %description
@@ -29,6 +30,7 @@ for the databases belonging to domain 'domain' in the directory 'dirname'
 
 %prep
 %setup -q -n %{cpan_name}-%{version}
+cp %{SOURCE1001} .
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor OPTIMIZE="%{optflags}"
@@ -43,6 +45,7 @@ make test
 %perl_gen_filelist
 
 %files -f %{name}.files
+%manifest %{name}.manifest
 %defattr(644,root,root,755)
 
 %changelog
