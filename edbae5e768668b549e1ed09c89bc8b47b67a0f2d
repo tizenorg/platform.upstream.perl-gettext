@@ -1,0 +1,8 @@
+Change-Id: Iedbae5e768668b549e1ed09c89bc8b47b67a0f2d
+Code-Review+2: Ryan Ware <ware@linux.intel.com>
+Verified+1: Ryan Ware <ware@linux.intel.com>
+Submitted-by: Ryan Ware <ware@linux.intel.com>
+Submitted-at: Mon, 08 Jul 2013 09:36:44 -0700
+Reviewed-on: https://review.tizen.org/gerrit/5286
+Project: platform/upstream/perl-gettext
+Branch: refs/heads/tizen
