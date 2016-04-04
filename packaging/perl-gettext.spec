@@ -36,7 +36,7 @@ cp %{SOURCE1001} .
 export CFLAGS+=" -fvisibility=hidden"
   export CXXFLAGS+=" -fvisibility=hidden"
   
-perl Makefile.PL INSTALLDIRS=vendor OPTIMIZE="%{optflags}"
+perl Makefile.PL INSTALLDIRS=vendor OPTIMIZE="%{optflags} -fvisibility=hidden"
 make %{?_smp_mflags}
 
 %check
